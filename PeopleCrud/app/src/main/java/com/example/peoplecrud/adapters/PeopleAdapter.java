@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.example.peoplecrud.R;
 import com.example.peoplecrud.models.Person;
 
 import java.util.List;
@@ -29,6 +30,18 @@ public class PeopleAdapter extends ArrayAdapter<Person> {
     public View getView(int position, View convertView, ViewGroup parent) {
         //создание представления для одного объекта
         View view = inflater.inflate(resource, parent, false);
+
+        //получение элементов управления на 'layout'
+        TextView tvName = view.findViewById(R.id.tvName);
+        TextView tvLastName = view.findViewById(R.id.tvLastName);
+        TextView tvPosition = view.findViewById(R.id.tvPosition);
+
+        //отображаемая машина
+        final Person person = informationList.get(position);
+
+        tvName.setText(person.getName());
+        tvLastName.setText(person.getLastName());
+        tvPosition.setText(person.getPosition());
 
         return view;
     }
