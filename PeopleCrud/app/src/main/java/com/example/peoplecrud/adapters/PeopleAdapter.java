@@ -36,7 +36,7 @@ public class PeopleAdapter extends ArrayAdapter<Person> {
         TextView tvLastName = view.findViewById(R.id.tvLastName);
         TextView tvPosition = view.findViewById(R.id.tvPosition);
 
-        //отображаемая машина
+        //отображаемая человек
         final Person person = informationList.get(position);
 
         tvName.setText(person.getName());
