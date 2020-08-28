@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddPerson">
+    tools:context=".UpdatePerson">
 
     <Button
         android:id="@+id/btnClose"
@@ -16,49 +16,77 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnUpdate" />
 
-    <EditText
+    <TextView
         android:id="@+id/tvName"
-        android:layout_width="match_parent"
+        android:layout_width="200sp"
         android:layout_height="40dp"
         android:gravity="center"
-        android:hint="Введите имя"
+        android:text="Имя"
         android:textColor="@android:color/background_dark"
-        android:textSize="10sp"
-        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/tvNamePerson"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tvLastNamePerson"
+        android:layout_width="210sp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamePerson" />
+
+    <EditText
+        android:id="@+id/tvNamePerson"
+        android:layout_width="210sp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/tvLastName"
-        android:layout_width="match_parent"
+        android:id="@+id/tvPositionPerson"
+        android:layout_width="210sp"
         android:layout_height="40dp"
         android:gravity="center"
-        android:hint="Введите фамилию"
-        android:textColor="@android:color/background_dark"
-        android:textSize="10sp"
-        android:textStyle="bold"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastNamePerson" />
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="200sp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Фамилия"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/tvLastNamePerson"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
-    <EditText
+    <TextView
         android:id="@+id/tvPosition"
-        android:layout_width="match_parent"
+        android:layout_width="200sp"
         android:layout_height="40dp"
         android:gravity="center"
-        android:hint="Введите позицию"
+        android:text="Позиция"
         android:textColor="@android:color/background_dark"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/tvPositionPerson"
         app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
 
     <Button
         android:id="@+id/btnUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add"
+        android:layout_marginTop="6dp"
+        android:text="Update"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPosition" />
 

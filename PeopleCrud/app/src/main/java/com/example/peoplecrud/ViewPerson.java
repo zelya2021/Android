@@ -18,10 +18,10 @@ public class ViewPerson extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_person);
-        btnCloseViewAct = findViewById(R.id.btnAddPersonNewAct);
-        tvNameView = findViewById(R.id.tvNameView);
-        tvLastNameView = findViewById(R.id.tvLastNameView);
-        tvPositionView = findViewById(R.id.tvPositionView);
+        btnCloseViewAct = findViewById(R.id.btnUpdate);
+        tvNameView = findViewById(R.id.tvName);
+        tvLastNameView = findViewById(R.id.tvLastName);
+        tvPositionView = findViewById(R.id.tvPosition);
 
         btnCloseViewAct.setOnClickListener(new View.OnClickListener() {
             @Override

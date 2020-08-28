@@ -22,7 +22,7 @@ public class AddPerson extends AppCompatActivity {
         tvNameAdd=findViewById(R.id.tvName);
         tvLastNameAdd=findViewById(R.id.tvLastName);
         tvPositionAdd=findViewById(R.id.tvPosition);
-        btnAddPersonNewAct=findViewById(R.id.btnAddPersonNewAct);
+        btnAddPersonNewAct=findViewById(R.id.btnUpdate);
         btnClose=findViewById(R.id.btnClose);
 
         btnAddPersonNewAct.setOnClickListener(new View.OnClickListener() {
@@ -30,7 +30,6 @@ public class AddPerson extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.putExtra(Person.class.getSimpleName(), new Person(tvNameAdd.getText().toString(), tvLastNameAdd.getText().toString(), tvPositionAdd.getText().toString()));
-                //intent.putExtra(KEY_RESULT_STR, "Okey!");
 
                 setResult(RESULT_OK, intent);
                 //закрытие текущего Activity

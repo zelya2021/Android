@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btnViewNewPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="View Person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddNewPerson" />
+
     <ListView
         android:id="@+id/lvPeople"
         android:layout_width="409dp"
@@ -17,7 +28,7 @@
         android:id="@+id/btnAddNewPerson"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="10dp"
         android:text="Add Person"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -25,13 +36,14 @@
         app:layout_constraintTop_toBottomOf="@+id/lvPeople" />
 
     <Button
-        android:id="@+id/btnViewNewPerson"
+        android:id="@+id/btnUpdatePerson"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View Person"
+        android:layout_marginTop="10dp"
+        android:text="Update Person"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAddNewPerson" />
+        app:layout_constraintTop_toBottomOf="@+id/btnViewNewPerson" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

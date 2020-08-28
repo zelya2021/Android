@@ -7,7 +7,7 @@
     tools:context=".ViewPerson">
 
     <TextView
-        android:id="@+id/tvNameView"
+        android:id="@+id/tvName"
         android:layout_width="210sp"
         android:layout_height="40dp"
         android:gravity="center"
@@ -53,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
 
     <Button
-        android:id="@+id/btnAddPersonNewAct"
+        android:id="@+id/btnUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
@@ -63,24 +63,24 @@
         app:layout_constraintTop_toBottomOf="@+id/tvPosition" />
 
     <TextView
-        android:id="@+id/tvLastNameView"
+        android:id="@+id/tvLastName"
         android:layout_width="210sp"
         android:layout_height="40dp"
         android:gravity="center"
         android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNameView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
     <TextView
-        android:id="@+id/tvPositionView"
+        android:id="@+id/tvPosition"
         android:layout_width="210sp"
         android:layout_height="40dp"
         android:gravity="center"
         android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLastNameView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
