@@ -8,23 +8,15 @@
 
     <TextView
         android:id="@+id/tvName"
-        android:layout_width="210sp"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvName"
         android:layout_width="200sp"
         android:layout_height="40dp"
+        android:layout_marginEnd="2dp"
         android:gravity="center"
         android:text="Имя"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/textViewName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,6 +29,7 @@
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/textViewLastName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
@@ -49,6 +42,7 @@
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPosition"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
 
@@ -63,24 +57,31 @@
         app:layout_constraintTop_toBottomOf="@+id/tvPosition" />
 
     <TextView
-        android:id="@+id/tvLastName"
-        android:layout_width="210sp"
-        android:layout_height="40dp"
+        android:id="@+id/textViewName"
+        android:layout_width="210dp"
+        android:layout_height="40sp"
         android:gravity="center"
         android:textSize="18sp"
-        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvPosition"
-        android:layout_width="210sp"
-        android:layout_height="40dp"
+        android:id="@+id/textViewLastName"
+        android:layout_width="210dp"
+        android:layout_height="40sp"
         android:gravity="center"
         android:textSize="18sp"
-        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <TextView
+        android:id="@+id/textViewPosition"
+        android:layout_width="210dp"
+        android:layout_height="40sp"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLastName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

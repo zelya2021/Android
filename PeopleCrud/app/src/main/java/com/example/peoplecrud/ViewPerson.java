@@ -19,9 +19,9 @@ public class ViewPerson extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_person);
         btnCloseViewAct = findViewById(R.id.btnUpdate);
-        tvNameView = findViewById(R.id.tvName);
-        tvLastNameView = findViewById(R.id.tvLastName);
-        tvPositionView = findViewById(R.id.tvPosition);
+        tvNameView = findViewById(R.id.textViewName);
+        tvLastNameView = findViewById(R.id.textViewLastName);
+        tvPositionView = findViewById(R.id.textViewPosition);
 
         btnCloseViewAct.setOnClickListener(new View.OnClickListener() {
             @Override

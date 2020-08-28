@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     ListView lvPeople;
-    Button btnAddNewPerson,btnViewNewPerson, btnUpdatePerson;
+    Button btnAddNewPerson,btnViewNewPerson, btnUpdatePerson, btnDeletePerson;
     private int Activity_Add_Person = 0;
     private int Activity_Update_Person = 0;
     ArrayList<Person> people =new ArrayList<>();
@@ -28,9 +28,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         lvPeople = findViewById(R.id.lvPeople);
+
         btnAddNewPerson=findViewById(R.id.btnAddNewPerson);
         btnViewNewPerson = findViewById(R.id.btnViewNewPerson);
         btnUpdatePerson = findViewById(R.id.btnUpdatePerson);
+        btnDeletePerson = findViewById(R.id.btnDeletePerson);
 
         people.add(new Person("Masha","Petrovskaya","menager"));
 
@@ -78,6 +80,15 @@ public class MainActivity extends AppCompatActivity {
                 //передача данных
                 intent.putExtra(Person.class.getSimpleName(), curr_person);
                 startActivityForResult(intent, Activity_Update_Person);
+            }
+        });
+
+        btnDeletePerson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int currentPerson=people.indexOf(curr_person);
+                people.remove(currentPerson);
+                lvPeople.setAdapter(peopleAdapter);
             }
         });
     }
