@@ -6,42 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".AddPerson">
 
-    <TextView
+    <EditText
         android:id="@+id/tvNameAdd"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:text="Name"
+        android:hint="Введите имя"
         android:textColor="@android:color/background_dark"
         android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/tvLastNameAdd"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:text="Last Name"
+        android:hint="Введите фамилию"
         android:textColor="@android:color/background_dark"
         android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNameAdd" />
 
-    <TextView
+    <EditText
         android:id="@+id/tvPositionAdd"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:text="Position"
+        android:hint="Введите позицию"
         android:textColor="@android:color/background_dark"
         android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvLastNameAdd" />
 
+    <Button
+        android:id="@+id/btnAddPersonNewAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPositionAdd" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
