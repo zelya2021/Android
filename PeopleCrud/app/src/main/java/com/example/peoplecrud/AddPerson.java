@@ -12,17 +12,18 @@ import com.example.peoplecrud.models.Person;
 
 public class AddPerson extends AppCompatActivity {
     EditText tvNameAdd, tvLastNameAdd, tvPositionAdd;
-    Button btnAddPersonNewAct;
+    Button btnAddPersonNewAct,btnClose;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_person);
 
-        tvNameAdd=findViewById(R.id.tvNameAdd);
-        tvLastNameAdd=findViewById(R.id.tvLastNameAdd);
-        tvPositionAdd=findViewById(R.id.tvPositionAdd);
+        tvNameAdd=findViewById(R.id.tvName);
+        tvLastNameAdd=findViewById(R.id.tvLastName);
+        tvPositionAdd=findViewById(R.id.tvPosition);
         btnAddPersonNewAct=findViewById(R.id.btnAddPersonNewAct);
+        btnClose=findViewById(R.id.btnClose);
 
         btnAddPersonNewAct.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,12 @@ public class AddPerson extends AppCompatActivity {
 
                 setResult(RESULT_OK, intent);
                 //закрытие текущего Activity
+                finish();
+            }
+        });
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 finish();
             }
         });

@@ -24,4 +24,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lvPeople" />
 
+    <Button
+        android:id="@+id/btnViewNewPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddNewPerson" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

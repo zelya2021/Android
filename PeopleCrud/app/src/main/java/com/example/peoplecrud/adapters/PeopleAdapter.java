@@ -32,9 +32,9 @@ public class PeopleAdapter extends ArrayAdapter<Person> {
         View view = inflater.inflate(resource, parent, false);
 
         //получение элементов управления на 'layout'
-        TextView tvName = view.findViewById(R.id.tvNameAdd);
-        TextView tvLastName = view.findViewById(R.id.tvLastNameAdd);
-        TextView tvPosition = view.findViewById(R.id.tvPositionAdd);
+        TextView tvName = view.findViewById(R.id.tvName);
+        TextView tvLastName = view.findViewById(R.id.tvLastName);
+        TextView tvPosition = view.findViewById(R.id.tvPosition);
 
         //отображаемая человек
         final Person person = informationList.get(position);

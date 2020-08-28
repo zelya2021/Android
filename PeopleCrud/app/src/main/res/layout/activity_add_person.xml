@@ -6,8 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".AddPerson">
 
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddPersonNewAct" />
+
     <EditText
-        android:id="@+id/tvNameAdd"
+        android:id="@+id/tvName"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
@@ -19,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/tvLastNameAdd"
+        android:id="@+id/tvLastName"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
@@ -28,10 +38,10 @@
         android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNameAdd" />
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
     <EditText
-        android:id="@+id/tvPositionAdd"
+        android:id="@+id/tvPosition"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
@@ -40,17 +50,17 @@
         android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLastNameAdd" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
 
     <Button
         android:id="@+id/btnAddPersonNewAct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
         android:text="Add"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPositionAdd" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPosition" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
